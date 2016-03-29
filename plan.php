@@ -11,7 +11,7 @@ if($login && $user_data = $db->select('user_data','*',"user_id='{$login->user_id
 			<span><b>Current:</b> The <?php echo $user_data->chall_name ?> challenge -- <b>Day:</b> <?php echo $user_data->chall_day ?></span>
 			<label>Challenge name:</label><input class="form-control" type="text"><br/>
 			<label>I will do my best to complete this challenge</label> <input type="checkbox"><br/>
-			<button type="submit" class="btn btn-default" id="newChall">
+			<button type="submit" class="btn btn-default" id="newChall">Save</buton>
 		</div>
 	</div>
 
