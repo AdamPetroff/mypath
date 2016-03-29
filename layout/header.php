@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
    		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?php echo $page_title ?></title>
-		<link rel="stylesheet" type="text/css" href="/stranka3/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/stranka3/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" type="text/css" href="/stranka3/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/mypath/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/mypath/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="/mypath/css/style.css">
 	</head>
 	<body>
 	<div class="container" style="background-color:#f4f4f4">
