@@ -20,7 +20,7 @@ if($login = $user->check_login()){
 			if($clean_post['chall_day'] < 28)
 				$response = $db->update('user_data',"chall_day='{$clean_post['chall_day']}'","user_id='{$login->user_id}'");
 			else
-				$response = $db->update('user_data',"chall_day=NULL","user_id='{$login->user_id}'");
+				$response = $db->update('user_data',"chall_day=NULL, chall_name=NULL","user_id='{$login->user_id}'");
 			die($response);
 		}
 	}

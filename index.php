@@ -38,16 +38,6 @@ if($login){
             <table class="table table-bordered text-center">
             <?php 
             $chall_int = 1;
-            if(!empty($_POST)){
-                $user_data->chall_day ++;
-                if($user_data->chall_day >= 28){
-                    $db ->update("user_data","chall_name=NULL, chall_day=NULL","user_id='{$user_data->user_id}'");
-                    echo '<script>alert("Congratulations on completing your challenge!")</script>';
-                    $user_data->chall_day = 0;
-                }
-                else
-                    $db-> update("user_data","chall_day='{$user_data->chall_day}'","user_id='{$user_data->user_id}'");
-            }
             for ($i=0; $i < 4; $i++) { 
                 echo "<tr>";
                 for ($j=0; $j < 7; $j++) {
