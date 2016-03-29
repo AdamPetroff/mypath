@@ -52,19 +52,17 @@ if($login){
                 echo "<tr>";
                 for ($j=0; $j < 7; $j++) {
                     if($user_data->chall_day>=$chall_int)    
-                        echo "<td class=\"success\">{$chall_int}</td>";
+                        echo "<td id=\"$chall_int\" class=\"success\">$chall_int</td>";
                     else
-                        echo "<td>{$chall_int}</td>";
+                        echo "<td id=\"$chall_int\">$chall_int</td>";
                     $chall_int++;
                 }
                 echo "</tr>";
             }
             ?>
             </table>
-            <form action="<?php htmlentities($_SERVER['PHP_SELF']) ?>" method="post">
-                <input type="submit" class="btn btn-success" name="daydone" value="Check off today!">
-            </form>
-            </div>
+            <button id="incrementChallDay" class="btn btn-success">Check off today!</button>
+        </div>
         <aside class="col-md-3 col-md-push-1" id="motivation">
             <blockquote><p><?php echo $quote_quote ?></p><footer><?php echo $quote_author ?></footer></blockquote>
         </aside>
